@@ -1,0 +1,6 @@
+version: "2"
+services:
+
+  cron:
+    build: .
+    command: cron && tail -f /var/log/task.log
