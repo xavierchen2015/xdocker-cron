@@ -12,8 +12,6 @@ RUN apt-get -y install vim
 
 ADD cronjob /etc/cron.d/demo
 
-#RUN touch /etc/crontab /etc/cron.*/*
-
 RUN touch /var/log/task.log
 
 CMD ["cron", "-f"]
